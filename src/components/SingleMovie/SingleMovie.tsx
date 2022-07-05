@@ -10,7 +10,7 @@ import { ScrollView } from 'react-native-gesture-handler';
 const SingleMovie: FC<{ movie: Movie }> = ({ movie }) => {
   return (
     <>
-      <View style={styles.SingleMovieContainer}>
+      <View style={styles.singleMovieContainer}>
         <View style={styles.singleMovieTitleImageContainer}>
           <SingleMovieImage movieImage={movie.posterUrl} />
           <SingleMovieTitle movieTitle={movie.title} />

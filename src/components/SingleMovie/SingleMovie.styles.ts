@@ -21,6 +21,14 @@ export const styles = StyleSheet.create({
     position: 'relative',
   },
   singleMovieInfo: {
-    padding: 10,
+    fontWeight: '500',
+    padding: 15,
+    paddingLeft: 20,
+  },
+  singleMovieContainer: {
+    paddingBottom: 80,
+  },
+  singleMovieInfoHeader: {
+    color: '#444',
   },
 });
