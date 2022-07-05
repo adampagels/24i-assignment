@@ -18,7 +18,6 @@ export const styles = StyleSheet.create({
   singleMovieTitleImageContainer: {
     height: '60%',
     width: '100%',
-    position: 'relative',
   },
   singleMovieInfo: {
     fontWeight: '500',
