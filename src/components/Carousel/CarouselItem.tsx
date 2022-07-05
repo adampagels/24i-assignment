@@ -13,11 +13,12 @@ const CarouselItem: FC<CarouselData> = ({ items }) => {
 
   return (
     <>
-      {items.map((movie: Movie) => {
+      {items.map((movie: Movie, index) => {
         return (
           <TouchableOpacity
-            onPress={() => navigation.navigate('Movie', { movie: movie })}>
-            <View style={styles.carouselItem}>
+            onPress={() => navigation.navigate('Movie', { movie: movie })}
+            key={index}>
+            <View style={styles.carouselItem} key={index}>
               <CarouselItemImage movieImage={movie.posterUrl} />
               <CarouselIteamTitle movieTitle={movie.title} />
             </View>
