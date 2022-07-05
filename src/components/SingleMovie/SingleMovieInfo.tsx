@@ -21,7 +21,7 @@ const SingleMovieTitle: FC<{ movie: Movie }> = ({ movie }) => {
       </Text>
       <Text style={styles.singleMovieInfo}>
         <Text style={styles.singleMovieInfoHeader}>Genres: </Text>
-        {movie.genres}
+        {movie.genres.join(', ')}
       </Text>
     </>
   );
