@@ -11,8 +11,10 @@ const Home = () => {
   return (
     <SafeAreaView>
       <ScrollView alwaysBounceVertical={false}>
-        {movieInformation?.map(movie => {
-          return <Carousel title={movie.title} items={movie.items} />;
+        {movieInformation?.map((movie, index) => {
+          return (
+            <Carousel title={movie.title} items={movie.items} key={index} />
+          );
         })}
       </ScrollView>
     </SafeAreaView>
